@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>顾客信息</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="icofont/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- JS -->
+    <script type="text/javascript" src="js/system.js"></script>
+
+</head>
+
+
+<body onload="loaded()">
+    <!-- main start -->
+    <div class="main main-gray">
+        <div class="scroller">
+            <!-- panel start -->
+            <div class="panel-customer">
+                <div class="background"></div>
+                <div class="topbar">
+                    <button class="button button-mini button-smooth button-outline button-outline-white left-icon">
+                        <span class="button-inner"><i class="icon-heart-2"></i>未关注</span>
+                    </button>
+                    <button class="button button-mini button-smooth button-white left-icon">
+                        <span class="button-inner"><i class="icon-heart"></i>已关注</span>
+                    </button>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="avatar">
+                            <img src="http://img.la/100x100" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="title">
+                                <h3 class="name">Allen</h3>
+                            </div>
+                            <div class="field">
+                                <span>无群组</span>
+                                <span>非会员</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-button-group panel-button-group-right">
+                        <buttom data-href="#" class="button button-round button-round-large button-outline button-wave button-wave-light">
+                            <span class="button-inner"><i class="icon-message"></i></span>
+                        </buttom>
+                        <buttom data-href="tel:10086" class="button button-round button-round-large button-outline button-wave button-wave-light">
+                            <span class="button-inner"><i class="icon-telephone"></i></span>
+                        </buttom>
+                    </div>
+                </div>
+            </div>
+            <!-- panel over -->
+            <!-- label start -->
+            <div class="label-group">
+                <!-- 标签按员工角色分配颜色, 红-顾问, 黄-主诊, 蓝-医助 -->
+                <span class="label label-mini label-round label-outline label-outline-red">沉鱼落雁</span>
+                <span class="label label-mini label-round label-outline label-outline-yellow">闭月羞花</span>
+                <span class="label label-mini label-round label-outline label-outline-blue">眉目如画</span>
+            </div>
+            <!-- label over -->
+            <!-- list start -->
+            <div class="list list-border">
+                <!-- item start -->
+                <div data-href="2-group-content.html" class="item waves-effect arrow-right">
+                    <div class="row">
+                        <label class="label"><i class="icon-group"></i>群组信息</label>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <!-- 监督者角色不可创建群组 -->
+                <div data-href="2-group-build-1.html" class="item waves-effect arrow-right">
+                    <div class="row">
+                        <label class="label"><i class="icon-group"></i>创建群组 (顾问)</label>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div data-href="2-group-build-2.html" class="item waves-effect arrow-right">
+                    <div class="row">
+                        <label class="label"><i class="icon-group"></i>创建群组 (主诊&医助)</label>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div data-href="2-chat-history.html" class="item waves-effect arrow-right">
+                    <div class="row">
+                        <label class="label"><i class="icon-chat-3"></i>聊天记录</label>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div data-href="2-customer-label.html" class="item waves-effect arrow-right">
+                    <div class="row">
+                        <label class="label"><i class="icon-label"></i>标签管理</label>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div data-href="2-customer-edit.html" class="item waves-effect arrow-right">
+                    <div class="row">
+                        <label class="label"><i class="icon-pen"></i>顾客信息编辑</label>
+                    </div>
+                </div>
+                <!-- item over -->
+            </div>
+            <!-- list over -->
+            <div class="spacing"></div>
+            <!-- list start -->
+            <div class="list list-border">
+                <!-- item start -->
+                <div class="item">
+                    <div class="row">
+                        <label class="label">
+                            <p class="light small">姓名</p>
+                        </label>
+                        <p class="small light">未编辑</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="row">
+                        <label class="label">
+                            <p class="light small">手机</p>
+                        </label>
+                        <p class="small">138-8888-8888</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="row">
+                        <label class="label">
+                            <p class="light small">生日</p>
+                        </label>
+                        <p class="small">1987年8月3日</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="row">
+                        <label class="label">
+                            <p class="light small">城市</p>
+                        </label>
+                        <p class="small">上海市</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="row">
+                        <label class="label">
+                            <p class="light small">绑定日期</p>
+                        </label>
+                        <p class="small">2017年2月20日</p>
+                    </div>
+                </div>
+                <!-- item over -->
+            </div>
+            <!-- list over -->
+        </div>
+     </div>
+    <!-- main over -->
+
+    <!-- JavaScript start -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/iscroll/iscroll-probe.js"></script>
+    <script type="text/javascript" src="js/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="js/lazyload/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="js/modalEffects/classie.js"></script>
+    <script type="text/javascript" src="js/modalEffects/modalEffects.js"></script>
+    <script type="text/javascript" src="js/waves/waves.min.js"></script>
+    <script type="text/javascript" src="js/photoSwipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="js/photoSwipe/photoswipe-ui-default.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- JavaScript over -->
+
+</body>
+
+</html>

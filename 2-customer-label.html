@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>标签管理</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="icofont/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- JS -->
+    <script type="text/javascript" src="js/system.js"></script>
+
+</head>
+
+
+<body onload="loaded()">
+    <!-- footer start -->
+    <footer class="button-group">
+        <button class="button button-block waves-effect waves-light">
+            <span class="button-inner">提交</span>
+        </button>
+    </footer>
+    <!-- footer over -->
+    <!-- main start -->
+    <div class="main">
+        <div class="scroller">
+            <!-- panel start -->
+            <div class="panel-customer">
+                <div class="background"></div>
+                <div class="row">
+                    <div class="column">
+                        <div class="avatar">
+                            <img src="http://img.la/100x100" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="title">
+                                <h3 class="name">Allen</h3>
+                            </div>
+                            <div class="field">
+                                <span>无群组</span>
+                                <span>非会员</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-button-group panel-button-group-right">
+                        <button class="button button-round button-round-large button-outline button-wave button-wave-light md-trigger" data-modal="modal-add-label">
+                            <span class="button-inner"><i class="icon-plus"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- panel over -->
+            <!-- label start -->
+            <div class="label-group">
+                <!-- 标签按员工角色分配颜色, 红-顾问, 黄-主诊, 蓝-医助-->
+                <!-- 当前角色添加的标签显示删除图标 -->
+                <span class="label label-small label-round label-outline label-outline-red label-cancel">沉鱼落雁<i class="icon-cancel-2"></i></span>
+                <span class="label label-small label-round label-outline label-outline-red label-cancel">闭月羞花<i class="icon-cancel-2"></i></span>
+                <span class="label label-small label-round label-outline label-outline-yellow  label-cancel">老司机<i class="icon-cancel-2"></i></span>
+                <span class="label label-small label-round label-outline label-outline-blue">眉目如画</span>
+                <span class="label label-small label-round label-outline label-outline-blue">倾国倾城</span>
+                <span class="label label-small label-round label-outline label-outline-blue">花容月貌</span>
+            </div>
+            <!-- label over -->
+            <!-- tab start -->
+            <!-- 分类在4个以内使用固定tab -->
+            <!-- <div class="tabbar tabbar-swiper">
+                <div class="item active">标签分类</div>
+                <div class="item">标签分类</div>
+            </div> -->
+            <!-- 分类较多时使用可滑动tab -->
+            <div class="swiper-container tabbar tabbar-overflow-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide item active">标签分类</div>
+                    <div class="swiper-slide item">标签分类</div>
+                    <div class="swiper-slide item">标签分类</div>
+                    <div class="swiper-slide item">标签分类</div>
+                    <div class="swiper-slide item">标签分类</div>
+                </div>
+            </div>
+            <!-- 使用固定tab时容器类名改为 tabbar-swiper-container -->
+            <!-- 容器数量要与tab数量相同 -->
+            <div class="swiper-container tabbar-overflow-swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- group start -->
+                    <div class="swiper-slide">
+                        <div class="label-group">
+                            <!-- 已添加标签不可再选，并添加 label-translucent -->
+                            <!-- 标签按员工角色使用颜色, 红-顾问, 黄-主诊, 蓝-医助 -->
+                            <span class="label label-small label-round label-outline label-outline-red label-translucent">沉鱼落雁</span>
+                            <span class="label label-small label-round label-outline label-outline-red label-translucent">闭月羞花</span>
+                            <span class="label label-small label-round label-outline label-outline-red">眉目如画</span>
+                            <span class="label label-small label-round label-outline label-outline-red">花容月貌</span>
+                            <span class="label label-small label-round label-outline label-outline-red">倾国倾城</span>
+                            <span class="label label-small label-round label-outline label-outline-red">人间尤物</span>
+                            <span class="label label-small label-round label-outline label-outline-red">出尘脱俗</span>
+                            <span class="label label-small label-round label-outline label-outline-red">吹弹即破</span>
+                            <span class="label label-small label-round label-outline label-outline-red">白璧无瑕</span>
+                            <span class="label label-small label-round label-outline label-outline-red">美艳绝伦</span>
+                            <span class="label label-small label-round label-outline label-outline-red">楚楚可人</span>
+                        </div>
+                    </div>
+                    <!-- group over -->
+                    <!-- group start -->
+                    <div class="swiper-slide">
+                        <div class="label-group">
+                            <span class="label label-small label-round label-outline label-outline-red">沉鱼落雁</span>
+                        </div>
+                    </div>
+                    <!-- group over -->
+                    <!-- group start -->
+                    <div class="swiper-slide">
+                        <div class="label-group">
+                            <span class="label label-small label-round label-outline label-outline-red">闭月羞花</span>
+                        </div>
+                    </div>
+                    <!-- group over -->
+                    <!-- group start -->
+                    <div class="swiper-slide">
+                        <div class="label-group">
+                            <span class="label label-small label-round label-outline label-outline-red">沉鱼落雁</span>
+                        </div>
+                    </div>
+                    <!-- group over -->
+                    <!-- group start -->
+                    <div class="swiper-slide">
+                        <div class="label-group">
+                            <span class="label label-small label-round label-outline label-outline-red">闭月羞花</span>
+                        </div>
+                    </div>
+                    <!-- group over -->
+                </div>
+            </div>
+            <!-- tab over -->
+        </div>
+     </div>
+    <!-- main over -->
+
+    <!-- modal start -->
+    <div class="md-modal md-effect-fade" id="modal-add-label">
+        <div class="md-main">
+            <!-- content start -->
+            <div class="modal-title">
+                <h4 class="title">添加自定义标签</h4>
+                <button class="md-close"><i class="icon-cancel"></i></button>
+            </div>
+            <div class="modal-content">
+                <div class="list">
+                    <div class="item">
+                        <div class="row">
+                            <div class="input">
+                                <input class="input" type="text" placeholder="请输入自定义标签">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-button-group">
+                <button class="button button-block button-clear waves-effect">
+                    <span class="button-inner">添加</span>
+                </button>
+            </div>
+            <!-- content over -->
+        </div>
+    </div>
+    <div class="md-overlay"></div>
+    <!-- modal over -->
+
+    <!-- JavaScript start -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/iscroll/iscroll-probe.js"></script>
+    <script type="text/javascript" src="js/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="js/lazyload/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="js/modalEffects/classie.js"></script>
+    <script type="text/javascript" src="js/modalEffects/modalEffects.js"></script>
+    <script type="text/javascript" src="js/waves/waves.min.js"></script>
+    <script type="text/javascript" src="js/photoSwipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="js/photoSwipe/photoswipe-ui-default.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- JavaScript over -->
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>顾客信息编辑</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="icofont/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- JS -->
+    <script type="text/javascript" src="js/system.js"></script>
+
+</head>
+
+
+<body onload="loaded()">
+    <!-- main start -->
+    <div class="main main-gray">
+        <div class="scroller">
+            <div class="spacing"></div>
+            <!-- list start -->
+            <div class="list list-border">
+                <!-- item start -->
+                <div class="item">
+                    <div class="row">
+                        <label class="label">姓名</label>
+                        <div class="input">
+                            <input class="input" type="text" placeholder="请输入顾客姓名">
+                        </div>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="row">
+                        <label class="label">手机</label>
+                        <div class="input">
+                            <input class="input" type="tel" placeholder="请输入顾客手机号码">
+                        </div>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item arrow-right">
+                    <div class="row">
+                        <label class="label">性别</label>
+                        <div class="input">
+                            <select class="select">
+                                <option>女士</option>
+                                <option>先生</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item arrow-right" >
+                    <div class="row">
+                        <label class="label">生日</label>
+                        <div class="input">
+                            <input class="input" type="text" id="mobiscroll-date" placeholder="请选择顾客生日">
+                        </div>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item arrow-right md-trigger" id="area-select" data-modal="modal-area">
+                    <div class="row">
+                        <label class="label">城市</label>
+                        <p class="gray align-left flex-1">请选择顾客所在地区</p>
+                    </div>
+                </div>
+                <!-- item over -->
+            </div>
+            <!-- list over -->
+            <!-- explain start -->
+            <div class="explain align-center">
+                <p class="red">错误提示</p>
+            </div>
+            <!-- explain over -->
+            <!-- button start -->
+            <div class="button-group">
+                <button class="button button-block waves-effect waves-light">
+                    <span class="button-inner">提交</span>
+                </button>
+            </div>
+            <!-- button over -->
+        </div>
+     </div>
+    <!-- main over -->
+
+    <!-- modal start -->
+    <div class="md-modal md-effect-stick-bottom" id="modal-area">
+        <div class="md-main">
+            <div class="area-title">
+                <button class="area-close md-close">取消</button>
+                <h3 class="title">选择地区</h3>
+                <button class="area-back" id="area-back">返回</button>
+            </div>
+            <div class="area-content bottom-modal-scroll" id="area-content">
+                <div class="scroller">
+                    <ul class="area-list" id="area-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="md-overlay"></div>
+    <!-- modal over -->
+
+    <!-- JavaScript start -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/iscroll/iscroll-probe.js"></script>
+    <script type="text/javascript" src="js/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="js/lazyload/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="js/modalEffects/classie.js"></script>
+    <script type="text/javascript" src="js/modalEffects/modalEffects.js"></script>
+    <script type="text/javascript" src="js/waves/waves.min.js"></script>
+    <script type="text/javascript" src="js/photoSwipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="js/photoSwipe/photoswipe-ui-default.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- JavaScript over -->
+
+    <!-- area start -->
+    <script type="text/javascript" src="js/area/jquery.area.js"></script>
+    <!-- area over -->
+    <!-- date start -->
+    <script type="text/javascript" src="js/mobiscroll/mobiscroll.core.js"></script>
+    <script type="text/javascript" src="js/mobiscroll/mobiscroll.frame.js"></script>
+    <script type="text/javascript" src="js/mobiscroll/mobiscroll.scroller.js"></script>
+    <script type="text/javascript" src="js/mobiscroll/mobiscroll.util.datetime.js"></script>
+    <script type="text/javascript" src="js/mobiscroll/mobiscroll.datetimebase.js"></script>
+    <script type="text/javascript" src="js/mobiscroll/mobiscroll.datetime.js"></script>
+    <script type="text/javascript" src="js/mobiscroll/i18n/mobiscroll.i18n.zh.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('#mobiscroll-date').mobiscroll().date({
+                theme: 'ios',
+                mode: 'scroller',
+                display: 'bottom',
+                lang: 'zh',
+                rows: 5,
+                buttons: [
+                    'cancel',
+                    'set',
+                ]
+            });
+        });
+    </script>
+    <!-- date over -->
+
+</body>
+
+</html>

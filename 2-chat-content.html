@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>李先生 138****8888</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="icofont/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- JS -->
+    <script type="text/javascript" src="js/system.js"></script>
+
+</head>
+
+
+<body onload="loaded()">
+    <!-- footer start -->
+    <footer class="chatbar nprogress-fade nprogress-out">
+        <div class="chatbar-input">
+            <i class="icon-picture"></i>
+            <input type="file">
+        </div>
+        <div class="chatbar-voice">
+            <i class="icon-microphone"></i>
+        </div>
+        <div class="chatbar-keyboard" hidden>
+            <i class="icon-keyboard"></i>
+        </div>
+        <div class="chatbar-text">
+            <textarea class="chatbar-text-input" id="textarea"></textarea>
+        </div>
+        <div class="chatbar-voice-control" hidden>
+            <button class="chatbar-voice-input">按住 说话</button>
+        </div>
+        <div class="chatbar-send waves-effect waves-light">发送</div>
+    </footer>
+    <!-- footer over -->
+
+    <!-- main start -->
+    <div class="chat-main nprogress-fade nprogress-out">
+        <div class="scroller">
+            <!-- pull-down高度40px, 顶部下拉时出现 -->
+            <!-- 下拉大于40px并释放触摸时preloader添加spin类名, 实现图标旋转 -->
+            <div class="pull-down">
+                <div class="preloader"></div>
+            </div>
+            <!-- message start -->
+            <div class="chat-message photo-swipe">
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>嘿!</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <!-- 新添加角色姓名标签 <p class="name"> -->
+                        <!-- 主意: 图片气泡新添加message-image类名, 角色姓名去除p标签, 否则图片浏览器失效 -->
+                        <p class="name">韩梅梅 医助</p>
+                        <p>干什么?</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>走了?</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p class="name">韩梅梅 医助</p>
+                        <p>是啊</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>去哪里啊?</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p class="name">韩梅梅 医助</p>
+                        <p>回家</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>然后呢?</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p class="name">韩梅梅 医助</p>
+                        <p>上班啦</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>不上班行不行啊?</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p class="name">韩梅梅 医助</p>
+                        <p>不上班你养我啊?</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>我养你啊!</p>
+                        <!-- 文字信息发送中 -->
+                        <div class="preloader spin senting"></div>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p class="name">韩梅梅 医助</p>
+                        <p>先养好你自己吧! 傻瓜</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <div class="chat-date"><span>3月25日 星期六 12:00</span></div>
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <!-- 图片气泡新添加message-image类名, 角色姓名去除p标签 -->
+                    <div class="message message-image">
+                        韩梅梅 医助
+                        <figure>
+                            <!-- 大图最大宽高 1920px -->
+                            <!-- 小图最大宽高 150px -->
+                            <!-- data-size 为大图实际宽高 -->
+                            <a href="img/test-image/image01.jpg" data-size="1920x1080">
+                                <img src="img/test-image/image01-small.jpg" itemprop="thumbnail" alt="" />
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message message-image">
+                        <figure>
+                            <a href="img/test-image/image02.jpg" data-size="1080x1920">
+                                <img src="img/test-image/image02-small.jpg" alt="" />
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <!-- 图片上传中 -->
+                        <div class="preloader spin"></div>
+                    </div>
+                </div>
+                <!-- item over -->
+                <div class="chat-date"><span>3月25日 星期六 12:00</span></div>
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p class="name">韩梅梅 医助</p>
+                        <p>因为我的角色呢是比较调皮一点的, 所以我内心的潜在台词就是我不想死</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p class="name">韩梅梅 医助</p>
+                        <p>Thisisacontinuousletterusedtotestthelongword</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>超链接 <a data-href="http://baidu.com">https://github.com/zhouzhengrui/</a></p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>当然对于一些志同道合有兴趣的朋友, 大家还可以坐下来一起研究研究</p>
+                        <i class="icon-warning send-fail"></i>
+                    </div>
+                </div>
+                <!-- item over -->
+                <div class="chat-date">
+                    <span>3月25日 星期六 12:00 医美区域经理 阿星 加入群组</span>
+                </div>
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message voice">
+                        <p class="name">阿星 医美区域经理</p>
+                        <p class="time">1"</p>
+                        <i class="icon-sound-wave"></i>
+                        <div class="badge"></div>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message voice">
+                        <i class="icon-sound-wave"></i>
+                        <p class="time">12"</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item" id="last">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message voice play">
+                        <p class="name">阿星 医美区域经理</p>
+                        <p class="time">18"</p>
+                        <i class="icon-sound-wave"></i>
+                    </div>
+                </div>
+                <!-- item over -->
+            </div>
+            <!-- message over -->
+        </div>
+    </div>
+    <!-- main over -->
+
+    <!-- photoswipe start -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- photoswipe over -->
+
+    <!-- toast-voice start -->
+    <div class="toast-voice">
+        <i class="icon-microphone"></i>
+        <div class="ball-scale-ripple-multiple">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+    </div>
+    <!-- toast-voice over -->
+
+    <!-- JavaScript start -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/iscroll/iscroll-probe.js"></script>
+    <script type="text/javascript" src="js/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="js/lazyload/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="js/modalEffects/classie.js"></script>
+    <script type="text/javascript" src="js/modalEffects/modalEffects.js"></script>
+    <script type="text/javascript" src="js/waves/waves.min.js"></script>
+    <script type="text/javascript" src="js/photoSwipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="js/photoSwipe/photoswipe-ui-default.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- JavaScript over -->
+
+    <script type="text/javascript" src="js/nprogress/nprogress.js"></script>
+    <script type="text/javascript">
+        // nprogress start
+        NProgress.start();
+        $('.chatbar-text').bind('touchmove', function (e) {
+		   e.returnValue = false;
+		}, false);
+
+        // voice
+        // 点击话筒按钮
+        $('.chatbar-voice').on('click', function () {
+		   $(this).attr('hidden', 'hidden'); // 话筒按钮隐藏
+           $('.chatbar-keyboard').removeAttr('hidden'); // 键盘按钮显示
+           $('.chatbar-text').attr('hidden', 'hidden'); // 输入框隐藏
+           $('.chatbar-voice-control').removeAttr('hidden'); // 语音按钮显示
+		});
+        // 点击键盘按钮
+        $('.chatbar-keyboard').on('click', function () {
+		   $(this).attr('hidden', 'hidden'); // 键盘按钮隐藏
+           $('.chatbar-voice').removeAttr('hidden'); // 话筒按钮显示
+           $('.chatbar-voice-control').attr('hidden', 'hidden'); // 语音按钮隐藏
+           $('.chatbar-text').removeAttr('hidden'); // 输入框显示
+		});
+        // 语音按钮触摸开始
+        $('.chatbar-voice-input').on('touchstart', function () {
+		   $(this).addClass('active');
+           $('.toast-voice').addClass('show'); // 显示话筒面板
+		});
+        // 语音按钮触摸结束
+        $('.chatbar-voice-input').on('touchend', function () {
+		   $(this).removeClass('active');
+           $('.toast-voice').removeClass('show'); // 隐藏话筒面板
+		});
+
+        function loaded() {
+            // nprogress done
+            setTimeout(function() {
+                NProgress.done();
+                $('.nprogress-fade').removeClass('nprogress-out');
+            }, 700);
+            // iScroll
+            var chatScroll;
+            chatScroll = new IScroll('.chat-main', {
+                scrollbars: 'custom',
+                fadeScrollbars: true,
+                shrinkScrollbars: 'scale',
+                click: true
+            });
+            chatScroll.scrollToElement(document.querySelector('#last'), 0, null, null, null);
+            // keyboard fix
+            var timer = null;
+            $('.chatbar-text-input').focus(function() {
+                // var target = this;
+                // setInterval(function() {
+                //     target.scrollIntoView(false);
+                // }, 100);
+                setTimeout(function() {
+                    chatScroll.scrollToElement(document.querySelector('#last'), 300, null, null, null);
+                }, 300);
+            });
+            $('.chatbar-send').on('click', function() {
+                $('.chatbar-text-input').val('').focus();
+            });
+            // href fix
+            var href = [];
+            $("[data-href]").each(function(i) {
+                href[i] = $(this).data('href');
+                $(this).bind("click", function() {
+                    location.href = href[i];
+                });
+            });
+        };
+
+        // textarea
+        var autoTextarea = function(elem, extra, maxHeight) {
+            extra = extra || 0;
+            var addEvent = function(type, callback) {
+                    elem.addEventListener ?
+                        elem.addEventListener(type, callback, false) :
+                        elem.attachEvent('on' + type, callback);
+                },
+                getStyle = elem.currentStyle ? function(name) {
+                    var val = elem.currentStyle[name];
+
+                    if (name === 'height' && val.search(/px/i) !== 1) {
+                        var rect = elem.getBoundingClientRect();
+                        return rect.bottom - rect.top -
+                            parseFloat(getStyle('paddingTop')) -
+                            parseFloat(getStyle('paddingBottom')) + 'px';
+                    };
+
+                    return val;
+                } : function(name) {
+                    return getComputedStyle(elem, null)[name];
+                },
+                minHeight = parseFloat(getStyle('height'));
+
+            elem.style.resize = 'none';
+
+            var change = function() {
+                // var scrollTop, height,
+                var height,
+                    padding = 0,
+                    style = elem.style;
+
+                if (elem._length === elem.value.length) return;
+                elem._length = elem.value.length;
+
+                // scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+
+                elem.style.height = minHeight + 'px';
+                if (elem.scrollHeight > minHeight) {
+                    if (maxHeight && elem.scrollHeight > maxHeight) {
+                        height = maxHeight - padding;
+                        style.overflowY = 'auto';
+                    } else {
+                        height = elem.scrollHeight - padding;
+                        style.overflowY = 'hidden';
+                    };
+                    style.height = height + extra + 'px';
+                    // scrollTop += parseInt(style.height) - elem.currHeight;
+                    // document.body.scrollTop = scrollTop;
+                    // document.documentElement.scrollTop = scrollTop;
+                    elem.currHeight = parseInt(style.height);
+                };
+            };
+
+            addEvent('propertychange', change);
+            addEvent('input', change);
+            addEvent('focus', change);
+            change();
+        };
+        var text = document.getElementById("textarea");
+        autoTextarea(text);
+
+        // 安卓长按弹出修复
+        window.addEventListener('contextmenu', function(e){
+            e.preventDefault();
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>聊天记录</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="icofont/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- JS -->
+    <script type="text/javascript" src="js/system.js"></script>
+
+</head>
+
+
+<body onload="loaded()">
+    <!-- header start -->
+    <header class="chat-header">
+        <div class="customer">
+            <div class="avatar">
+                <img src="http://img.la/40x40" alt="">
+            </div>
+            <h4>李雷</h4>
+        </div>
+        <p>李先生 138****8888</p>
+    </header>
+    <!-- header over -->
+    <!-- main start -->
+    <div class="chat-main">
+        <div class="scroller">
+            <div class="pull-down">
+                <div class="preloader"></div>
+            </div>
+            <!-- message start -->
+            <div class="chat-message photo-swipe">
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>嘿!</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>干什么?</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>走了?</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>是啊</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>去哪里啊?</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>回家</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>然后呢?</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>上班啦</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>不上班行不行啊?</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>不上班你养我啊?</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message" id="test">
+                        <p>我养你啊!</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>先养好你自己吧! 傻瓜</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <div class="chat-date"><span>3月25日 星期六 12:00</span></div>
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <figure>
+                            <!-- 大图最大宽高 1920px -->
+                            <!-- 小图最大宽高 150px -->
+                            <!-- data-size 为大图实际宽高 -->
+                            <a href="img/test-image/image01.jpg" data-size="1920x1080">
+                                <img src="img/test-image/image01-small.jpg" itemprop="thumbnail" alt="" />
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <figure>
+                            <a href="img/test-image/image02.jpg" data-size="1080x1920">
+                                <img src="img/test-image/image02-small.jpg" alt="" />
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <!-- item over -->
+                <div class="chat-date"><span>3月25日 星期六 12:00</span></div>
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>因为我的角色呢是比较调皮一点的, 所以我内心的潜在台词就是我不想死</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me" id="last">
+                    <div class="avatar">
+                        <img src="http://img.la/40x40" alt="">
+                    </div>
+                    <div class="message">
+                        <p>当然对于一些志同道合有兴趣的朋友, 大家还可以坐下来一起研究研究</p>
+                        <i class="icon-warning send-fail"></i>
+                    </div>
+                </div>
+                <!-- item over -->
+            </div>
+            <!-- message over -->
+        </div>
+    </div>
+    <!-- main over -->
+
+    <!-- photoswipe start -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- photoswipe over -->
+
+    <!-- JavaScript start -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/iscroll/iscroll-probe.js"></script>
+    <script type="text/javascript" src="js/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="js/lazyload/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="js/modalEffects/classie.js"></script>
+    <script type="text/javascript" src="js/modalEffects/modalEffects.js"></script>
+    <script type="text/javascript" src="js/waves/waves.min.js"></script>
+    <script type="text/javascript" src="js/photoSwipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="js/photoSwipe/photoswipe-ui-default.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- JavaScript over -->
+
+    <script type="text/javascript">
+
+        // iScroll
+        function loaded() {
+            var chatScroll;
+            chatScroll = new IScroll('.chat-main', {
+                scrollbars: 'custom',
+                fadeScrollbars: true,
+                shrinkScrollbars: 'scale',
+                click: true
+            });
+            chatScroll.scrollToElement(document.querySelector('#last'), 0, null, null, null);
+        };
+
+    </script>
+
+</body>
+
+</html>
